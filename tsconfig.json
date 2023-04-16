@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "dom",
+      "es2017"
+    ],
+    "types": [
+      "cypress",
+      "node",
+      "cypress-commands",
+      "@testing-library/cypress",
+      "cypress-each", "cypress-wait-until"
+
+    ],
+    "moduleResolution": "node"
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}

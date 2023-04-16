@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-16T21:19:32.827Z",
+    "end": "2023-04-16T21:19:43.653Z",
+    "duration": 10826,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fae69273-dfe7-43dc-9381-035eb30f63e9",
+      "title": "",
+      "fullFile": "cypress/e2e/fitPredictor/tests/calculatorSeed.cy.ts",
+      "file": "cypress/e2e/fitPredictor/tests/calculatorSeed.cy.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9db8d361-a0ed-4606-8eca-6406fed94e30",
+          "title": "Calculator seed",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should add calculator seed",
+              "fullTitle": "Calculator seed should add calculator seed",
+              "timedOut": null,
+              "duration": 10761,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "selectors_1.getFitPredictorButton('Fit Predictor').should('exist').click();\nselectors_1.getContainerTitle('Fit Predictor').should('exist');\nselectors_1.selectBrandOption('Adidas');\nselectors_1.selectCategoryOption('SNEAKERS');\nselectors_1.selectSizeOption('5.5 US');\nselectors_1.getLoader().should('not.exist');\nselectors_1.getSizePrediction('38').should('exist');\nselectors_1.getButton('Next').should('exist').click();\nselectors_1.getFpSeedText('Adidas').should('exist');\nselectors_1.getButton('Done').should('exist').click({ force: true });\nselectors_1.getContainer().should('not.exist');",
+              "err": {},
+              "uuid": "5b7578c8-263c-47c8-a384-5c2d81eeffb9",
+              "parentUUID": "9db8d361-a0ed-4606-8eca-6406fed94e30",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5b7578c8-263c-47c8-a384-5c2d81eeffb9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10761,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/integration",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
